@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cstring>
+#include <cstdlib>
+#include <algorithm>
+#include <iterator>
+
+namespace myspace
+{
+
+	class string
+	{
+		private:
+			char *str;
+			unsigned int length;
+		public:
+			string();
+			string(const char *);
+			string(const string&);
+			string(const string&,int,int);
+  			string(const char *,int);
+  			string(int,const char);
+  			string(int,int);
+  			string(char *,char *);
+			~string();
+			string& operator=(const string&);
+			string& operator=(const char*);
+			string& operator=(char c);
+			string& operator+=(const string&);
+			string& operator+=(const char * src);
+			string& operator+=(char src);
+			friend string operator+(const string&,const string&);
+			friend string operator+(const string& , const char*   );
+			friend string operator+(const char*   , const string& );
+			friend string operator+(const string& , char          );
+			friend string operator+(char          , const string& );
+			friend std::ostream& operator<< (std::ostream&,const string&);
+			friend std::istream& operator>> (std::istream&,string&);
+			char* begin();
+			size_t size() const;
+			class iterator : std::iterator<std::input_iterator_tag, char>
+			{
+				const char *p;
+				public:
+				iterator(const char *x) { p = x; }
+				string::iterator& operator++(int) { if(p!=NULL) {p++;} return *this;}
+				bool operator!=(const string::iterator eit) { return (p == eit.p); }
+			};
+	};
+};

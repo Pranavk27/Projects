@@ -1,0 +1,10 @@
+all: build library
+
+library:
+	@mkdir -p ##LIBDIR## 
+	g++ -g3 --std=c++1y -Wall -fPIC -shared src/Parser/ParserHandler.cpp -I src/Include -o ##LIBDIR##libparse##LIBEXT##
+build: library
+	@mkdir -p bin 
+	g++ -g3 --std=c++1y src/Parser/Main.cpp -I src/Include -o ##BINDIR##Parse -L ##LIBDIR## -lparse
+clean:
+	rm -rf ##BINDIR####EXTENSION## ##LIBDIR####EXTENSION##

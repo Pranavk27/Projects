@@ -1,0 +1,44 @@
+Agile
+-----
+
+Scrum is the most popular way of introducing Agility due to its simplicity and flexibility.
+Scrum has only three roles: Product Owner, Team, and Scrum Master.
+The responsibilities of the traditional project manager role are split up among these three Scrum roles. 
+Scrum has five meetings: Backlog Grooming (aka Backlog Refinement), Sprint Planning, Daily Scrum (aka 15-minute standup), the Sprint Review Meeting, and the Sprint Retrospective Meeting.
+
+In an agile paradigm, every aspect of development — requirements, design, etc. — is continually revisited throughout the lifecycle. When a team stops and re-evaluates the direction of a project every two weeks, there’s always time to steer it in another direction.
+Scrum meeting include variety of members with different experties (like Dev,QA,UI etc).
+
+Scrum meetings arranged in sequence:
+1. Sprint Planning.
+2. Backlog Grooming.
+3. Daily Scrum.
+4. Sprint Review Meeting.
+5. Sprint Retrospective Meeting.
+
+1. Sprint Planning
+The sprint planning is conducted for planning the activites to be planned for sprint(period of 2-3 weeks) to target the completion of activites that are pending or introduced newly.
+The team strips down the plan with various details of activites to be completed in the comming sprint.
+
+2. Backlog Grooming
+The Backlog meeting is conducted in presence of the project manager to part the activites to backlog fully/partially which cannot be completed in the sprint time.
+The priority tasks are set accordingly and the huge tasks are divided to smaller tasks to focus on some the important smaller tasks.
+The priority is decided by the project manager.
+The severity of the implementation is gather from everyone to identify who may be able to perform.
+
+3. Daily scrum
+Scrum master arranges the meeting executes the scrum.
+Daily srum should last not more than 15 minutes.The points discussed the daily scrum meeting should contain
+* What task was performed yesterday.
+* What task will be performed today.
+* Problems/hurdles if any.
+The project manager should not compulsorly be present in the meeting.
+Agile with scrum also promotes pair programming to pratice agile perfectly.
+Do mention if performed pair programming in the meeting.
+Pair programming mean that both programmers contribute by writing code and other programmer observes the changes made instead of one observes without any contribution.
+
+4. Sprint Review Meeting
+The review meeting is to know what problems were faced and how we can overcome those for future sprints.
+
+5.  Sprint Retrospective Meeting
+This is the meeting for actual demonstation of the tasks completed in the sprint and not just documents/presentation.

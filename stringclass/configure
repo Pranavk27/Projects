@@ -1,0 +1,35 @@
+#!/bin/bash
+# configure to prepare makefile as per platform.
+
+MAKEFILEIN=makefile.in
+MAKEFILE=makefile
+
+writeMakefileLinux()
+{
+	cp $MAKEFILEIN $MAKEFILE
+	sed -i 's/##LIBDIR##/lib\//g' $MAKEFILE
+	sed -i 's/##EXTENSION##/*/g' $MAKEFILE
+	sed -i 's/##BINDIR##/bin\//g' $MAKEFILE
+	sed -i 's/##LIBEXT##/.so/g' $MAKEFILE 
+}
+writeMakefileWin()
+{
+	cp $MAKEFILEIN $MAKEFILE
+	sed -i 's/##LIBDIR##/bin\//g' $MAKEFILE 
+	sed -i 's/##EXTENSION##/*.{dll,exe}/g' $MAKEFILE
+	sed -i 's/##BINDIR##/bin\//g' $MAKEFILE 
+	sed -i 's/##LIBEXT##/.dll/g' $MAKEFILE 
+}
+
+OS=`uname -a | awk '{print $1'}`
+echo "Operating System:" $OS
+
+if [[ $OS =~ CYGWIN.* ]]
+then
+	echo "Found Windows OS"
+	writeMakefileWin
+else
+	echo "Found Linux OS"
+	writeMakefileLinux
+fi
+

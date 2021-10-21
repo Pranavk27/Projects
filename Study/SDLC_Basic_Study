@@ -1,0 +1,110 @@
+SDLC  Basics ( Software development life cycle )
+Phase of SDLC are :
+	* Requirement gathering
+	* Design and Architecture
+	* Development and Implementation
+	* Testing and Quality assurance
+	* Deployment
+
+Different Models are:
+
+* Waterfall model:
+The Waterfall Model was first Process Model to be introduced. It is also referred to as a linear-sequential life cycle model. It is very simple to understand and use. In a waterfall model, each phase must be completed before the next phase can begin and there is no overlapping in the phases.
+
+	1. Applies for small projects
+	2. Clearly defined stages/phases.
+	3. High amounts of risk & uncertainity.
+	4. No working software until life cycle is complete.
+	5. Poor model for long and on-going projects.
+	
+* Iterative model:
+An iterative life cycle model does not attempt to start with a full specification of requirements. Instead, development begins by specifying and implementing just part of the software, which is then reviewed in order to identify further requirements. This process is then repeated, producing a new version of the software at the end of each iteration of the model.
+
+	1. incremental build approach.
+	2. Major requirements must be defined; however, some functionalities or requested enhancements may evolve with time.
+	3. A new technology is being used and is being learnt by the development team while working on the project.
+	4. Parallel development can be planned.
+	5. Less costly to change the scope/requirements.
+	6. With every increment operational product is delivered.
+	7. It supports changing requirements.
+	8. it is applicable only to large and bulky software development projects.
+	9. More resources may be required and More management attention is required.
+	10. Highly skilled resources are required for risk analysis.
+	11. System architecture or design issues may arise because not all requirements at beginning of the entire life cycle
+
+* Spiral model:
+The spiral model combines the idea of iterative development with the systematic, controlled aspects of the waterfall model.
+Spiral model is a combination of iterative development process model and sequential linear development model i.e. waterfall model with very high emphasis on risk analysis.
+
+	1. Customer is not sure of their requirements which is usually the case.
+	2. Significant changes are expected in the product during the development cycle.
+	3. When costs there is a budget constraint and risk evaluation is important.
+	4. it takes very strict management to complete such products.
+	5. Users see the system early.
+	6. Changing requirements can be accommodated and Requirements can be captured more accurately.
+	7. Spiral may go indefinitely and Process is complex.
+	8. End of project may not be known early.
+	9. Not suitable for small or low risk projects and could be expensive for small projects.
+	10. Large number of intermediate stages requires excessive documentation.
+
+* V model:
+Phases: 
+Verification Phases ( Requirement Analysis,System/Architectural Design,Module Design )
+Coding Phase
+Validation Phase ( Unit Testing,Integration Testing,System Testing,Acceptance Testing )
+
+	1. Requirements are well defined, clearly documented and fixed.
+	2. The project is short.
+	3. There are no ambiguous or undefined requirements.
+	4. This is a highly disciplined model and Phases are completed one at a time.
+	5. High risk and uncertainty.
+	6. Poor model for long and ongoing projects.
+	7. No working software is produced until late during the life cycle.
+	8. Once an application is in the testing stage, it is difficult to go back and change a functionality.
+
+* Big bang model:
+The Big Bang model is SDLC model where we do not follow any specific process. The development just starts with the required money and efforts as the input, and the output is the software developed which may or may not be as per customer requirement.
+
+	1. This is a very simple model.
+	2. Very High risk and uncertainty.
+	3. Little or no planning required.
+	4. Easy to manage.
+	5. Is a good learning aid for new comers or students.
+	6. Poor model for long and ongoing projects.
+	7. Not a good model for complex and object-oriented projects.
+
+* Agile model:
+Agile SDLC model is a combination of iterative and incremental process models with focus on process adaptability and customer satisfaction by rapid delivery of working software product.Agile Methods break the product into small incremental builds. These builds are provided in iterations. Each iteration typically lasts from about one to three weeks. 
+
+	1. in agile development, self-organization and motivation are important.
+	2. Demo working software is considered the best means of communication with the customer.
+	3. continuous customer interaction is very important to get proper product requirements.
+	4. agile development is focused on quick responses to change and continuous development.
+	5. Promotes teamwork and cross training.
+	6. Suitable for fixed or changing requirements.
+	7. Minimal rules, documentation easily employed.
+	8. Delivers early partial working solutions.
+	9. Not suitable for handling complex dependencies.
+	10. agile PM practice is a must without which it will not work.
+	11. Depends heavily on customer interaction.
+	12. There is very high individual dependency.
+	13. Transfer of technology to new team members may be quite challenging due to lack of documentation.
+
+* RAD model(Rapid application development):
+The RAD (Rapid Application Development) model is based on prototyping and iterative development with no specific planning involved.Rapid Application development focuses on gathering customer requirements through workshops or focus groups, early testing of the prototypes by the customer using iterative concept, reuse of the existing prototypes (components), continuous integration and rapid delivery.
+the phases of RAD Model:
+Business Modeling - designed in terms of flow of information and the distribution of information between various business.
+Data Modeling - The information gathered in the Business Modeling phase is reviewed and analyzed to form sets of data objects
+Process Modeling - The process model for any changes or enhancements to the data object sets is defined in this phase.
+Application Generation - The actual system is built and coding is done by using automation tools.
+Testing and Turnover - the prototypes are independently tested during every iteration.
+
+	1. RAD should be used only when a system can be modularized to be delivered in incremental manner.
+	2. It should be used only if the budget permits use of automated code generating tools.
+	3. It should be used if there.s high availability of designers for modeling.
+	4. Iteration time can be short with use of powerful RAD tools.
+	5. Increases reusability of components.
+	6. Quick initial reviews occur.
+	7. Dependency on technically strong team members for identifying business requirements.
+	8. High dependency on modeling skills and Requires highly skilled developers/designers.
+	9. Suitable for systems that are component based and scalable.

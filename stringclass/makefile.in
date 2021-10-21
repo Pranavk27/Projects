@@ -1,0 +1,10 @@
+all: build library
+
+library:
+	@mkdir -p ##LIBDIR## 
+	g++ -g3 --std=c++1y -Wall -fPIC -shared src/string.cpp -I include/ -o ##LIBDIR##libstring##LIBEXT##
+build: library
+	@mkdir -p bin 
+	g++ -g3 --std=c++1y src/Main.cpp -I include/ -o ##BINDIR##String -L ##LIBDIR## -lstring
+clean:
+	rm -rf ##BINDIR####EXTENSION## ##LIBDIR####EXTENSION##

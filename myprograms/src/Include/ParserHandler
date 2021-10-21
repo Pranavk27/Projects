@@ -1,0 +1,60 @@
+#include <iostream>
+#include <map>
+#include <string>
+#include <vector>
+#include <fstream>
+#include <unistd.h>
+#include <algorithm>
+
+using std::string;
+using std::ifstream;
+using std::cout;
+using std::map;
+using std::vector;
+using std::pair;
+
+namespace Parser{
+	class RSSFeed{
+		private:
+		public:
+			std::map<std::string,std::string>  RssFeedInfo;
+			RSSFeed();
+			~RSSFeed();
+			int RSSFeedAddToList(std::string,std::string);
+	};
+	class RSSFeedParser : public RSSFeed {
+		private:
+			//RSSFeed RssInfo;
+		public:
+			RSSFeedParser(std::string);
+			~RSSFeedParser();
+			std::string RSSSearchWord(std::string);
+
+	};
+	class FileType{
+		private:
+			std::string filetype;
+		public:
+			FileType();
+			FileType(std::string);
+			~FileType();
+			std::string GetFileType();
+	};
+
+	class ParserHandler {
+		public :
+			ParserHandler();
+			~ParserHandler();
+	};
+
+	class FileParser : public ParserHandler {
+		private:
+			std::string filename;
+			FileType filetype;
+		public:
+			FileParser(std::string ,FileType );
+			int ParseFile(std::string );
+			~FileParser();
+	};
+};
+
